@@ -23,7 +23,7 @@ public class MainActivity extends ListActivity {
     protected void onListItemClick(ListView l, View v, int position, long id){
         switch(position){
             case 0:
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.bartolottas.com/harbor-house")));
+                startActivity(new Intent(MainActivity.this, scan.class));
                 break;
             case 1:
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse ("https://www.mlb.com/brewers/ballpark" )));
