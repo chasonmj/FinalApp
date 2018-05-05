@@ -30,10 +30,10 @@ public class MainActivity extends ListActivity {
                 //startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse ("https://www.mlb.com/brewers/ballpark" )));
                 break;
             case 2:
-                startActivity(new Intent(MainActivity.this, resources.class));
+                startActivity(new Intent(MainActivity.this, social.class));
                 break;
             case 3:
-                startActivity(new Intent(MainActivity.this, scan.class));
+                startActivity(new Intent(MainActivity.this, social.class));
                 break;
             case 4:
                 startActivity(new Intent(MainActivity.this, scan.class));
