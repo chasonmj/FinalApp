@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".scan"></activity>
+        <activity android:name=".scan" />
+        <activity android:name=".resources" />
+        <activity android:name=".social"></activity>
     </application>
 
 </manifest>
