@@ -15,7 +15,7 @@ public class MainActivity extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        String[ ] menulist={"Scan", "Red Dye #40", "Profile", "Social"};
+        String[ ] menulist={"Scan", "Resources", "Social"};
         setListAdapter(new ArrayAdapter<String>(this, R.layout.activity_main, R.id.mainmenu, menulist));
 
     }
@@ -26,10 +26,11 @@ public class MainActivity extends ListActivity {
                 startActivity(new Intent(MainActivity.this, scan.class));
                 break;
             case 1:
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse ("https://www.mlb.com/brewers/ballpark" )));
+                startActivity(new Intent(MainActivity.this, resources.class));
+                //startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse ("https://www.mlb.com/brewers/ballpark" )));
                 break;
             case 2:
-                startActivity(new Intent(MainActivity.this, scan.class));
+                startActivity(new Intent(MainActivity.this, resources.class));
                 break;
             case 3:
                 startActivity(new Intent(MainActivity.this, scan.class));
